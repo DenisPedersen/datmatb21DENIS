@@ -30,7 +30,7 @@ void draw() {
     if (slukket ==3) {
     fill(0, 255, 0); //sæt farve til grøn
     ellipse(width/2, height/4*3, diam, diam); // grøn lys
-    }
+    }gdhg
     if (slukket ==4) {
     fill(r, g, 0); // sæt farve til gul
     ellipse(width/2, height/2, diam,diam); //gul lys
