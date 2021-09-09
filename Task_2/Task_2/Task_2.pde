@@ -10,5 +10,5 @@ void setup() {
 
 void draw() {
   println("Hi, my name is " + navn + ". I am " + alder + " years old.");
-  
+  println("I " + happyOrNot + " clap my hands.");
 }
