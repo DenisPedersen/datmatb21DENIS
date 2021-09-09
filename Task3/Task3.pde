@@ -14,11 +14,30 @@ void draw() {
   background(background);
   fill(0);
   rectMode(CENTER);
-  rect(width/2, height/2, 200, 500); //selve lyskurven
-  fill(r, g, 0); // sæt farve til gul
-  ellipse(width/2, height/2, diam,diam); //gul lys
-  fill(r, 0, 0); //sæt farve til rød
-  ellipse(width/2, height/2 - 160, diam, diam); // rød lys
-  fill(0, 100, 0); //sæt farve til grøn
-  ellipse(width/2, height/2 + 160, diam, diam); // grøn lys
+  rect(width/2, height/2, 200, 500); //selve lyskurven 
+  
+  if (slukket== 1) {
+    fill(r, 0, 0); //sæt farve til rød
+    ellipse(width/2, height/4, diam, diam); // rød lys
+  }
+   if (slukket== 2) {
+    fill(r, 0, 0); //sæt farve til rød
+    ellipse(width/2, height/4, diam, diam); // rød lys
+    fill(r, g, 0); // sæt farve til gul
+    ellipse(width/2, height/2, diam,diam); //gul lys
+  }
+    
+    if (slukket ==3) {
+    fill(0, 255, 0); //sæt farve til grøn
+    ellipse(width/2, height/4*3, diam, diam); // grøn lys
+    }
+    if (slukket ==4) {
+    fill(r, g, 0); // sæt farve til gul
+    ellipse(width/2, height/2, diam,diam); //gul lys
+    }
+  slukket++;
+  if (slukket >4) {
+    slukket=1;
+  }
+  delay(500);
 }
