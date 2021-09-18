@@ -1,27 +1,16 @@
-Die die1;
-Die die2;
-Die die3;
-Die die4;
-Die die5;
-Die die6;
+Die[] die = new Die[6];
 DiceCup cup;
 
 void setup() {
   size (475, 475);
   background(111);
-  die1 = new Die(255, 0);
-  die2 = new Die(255, 0);
-  die3 = new Die(255, 0);
-  die4 = new Die(255, 0);
-  die5 = new Die(255, 0);
-  die6 = new Die(255, 0);
+    for (int i = 0; i < 6; i++) {
+      die[i] = new Die(255, 0);
+    }
   cup = new DiceCup();
-  cup.addDie(die1);
-  cup.addDie(die2);
-  cup.addDie(die3);
-  cup.addDie(die4);
-  cup.addDie(die5);
-  cup.addDie(die6);
+    for(int i = 0; i <6; i++) {
+      cup.addDie(die[i]);
+    }
   cup.shake();
 }
 void draw() {
