@@ -1,3 +1,5 @@
+//Die-classen (skabelonen AKA cookie-cutteren).
+
 class Die {
   //alle variablerne som terningeclassen består af
   color eyeColor;
